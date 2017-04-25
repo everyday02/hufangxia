@@ -8,9 +8,9 @@ var X = new Object();
     listeners: {
       onLoaded: function() {
         $window.on('load', function() {
-  				window.setTimeout(function() {
-  					$body.removeClass('is-loading');
-  				}, 200);
+          window.setTimeout(function() {
+          	$body.removeClass('is-loading');
+          }, 200);
   			});
       },
       bindMoveSectionDown: function() {

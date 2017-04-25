@@ -59,6 +59,15 @@ a:hover {
 }
 
 
+#recall-wrapper .recall-01 .inner {
+  position: absolute;
+  padding-top: 10%;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
 #recall-wrapper .recall-01 h2 {
   -moz-transform: scale(1);
   -webkit-transform: scale(1);
@@ -195,13 +204,17 @@ body.is-loading #recall-wrapper .recall-01 .more {
   background-color: #21b2a6;
 }
 
+.recall-02 .iconfont {
+  font-size: 42px;
+}
+
 header.major {
   margin: 0 0 3.5em 0;
 }
 
 header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
-  border-color: rgba(0, 0, 0, 0.125);
   border-bottom: solid 2px #fff;
+  border-color: rgba(0, 0, 0, 0.125);
   display: inline-block;
   padding-bottom: 1em;
   position: relative;
@@ -213,7 +226,40 @@ header.major h2:after, header.major h3:after, header.major h4:after, header.majo
   height: 1px;
 }
 
+.recall-02 h2 {
+  border-color: rgba(0, 0, 0, 0.125);
+}
+
+.recall-02 header.major p {
+    color: #c7ebe8;
+}
+
 header.major p {
   color: #fff;
   top: 0;
+}
+
+ul.icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.icons li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+}
+
+ul.icons.major {
+  padding: 1em 0;
+}
+
+ul.icons.major li {
+  margin: 0em 1.5em;
+}
+
+@media screen and (max-width: 736px) {
+  ul.icons.major li {
+    padding: 0 1em !important;
+  }
 }
