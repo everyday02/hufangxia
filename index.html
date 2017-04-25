@@ -12,11 +12,9 @@
             <canvas id="sakura"></canvas>
             <div class="inner">
               <h2>深情告白的诗歌</h2>
-              <p>
-                参差荇菜,左右流之<br />
-                窈窕淑女,寤寐求之<br />
+              <p id="typed" style="height: 55px;" >
               </p>
-              <img class="girl-firend-head" src="./images/recall/IMG_2985.JPG" />
+              <img class="girl-firend-head hidden" src="./images/recall/IMG_2985.JPG" />
               <a href="javascript:" id="moveSectionDown" class="more scrolly">Learn More</a>
             </div>
         </div>
@@ -77,7 +75,7 @@
           <div class="setp hidden">
             <div class="left">
               <h2>行走中的垃圾袋的她</h2>
-              <div>记一次外出下雨，最终靠水果电老板给的垃圾袋回家的我们。</div>
+              <div>记一次外出下雨，最终靠水果店老板给的垃圾袋回家的我们。</div>
             </div>
             <div class="right">
               <img src="./images/recall/IMG_2018.JPG" />
@@ -95,11 +93,13 @@
             <button>点击进入</button>
         </div>
     </div>
+    <audio src="Baby.mp3" autoplay="true" />
   </body>
   <link rel="stylesheet" href="./css/1/override-fullPage.css" />
   <link rel="stylesheet" href="./css/1/main.css" />
   <script src="./js/public/jquery.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="./js/public/jquery.fullPage.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/plugins/typed.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="./js/1/main.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript">
     X.init();

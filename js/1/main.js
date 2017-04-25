@@ -11,6 +11,17 @@ var X = new Object();
         $window.on('load', function() {
           window.setTimeout(function() {
           	$body.removeClass('is-loading');
+            setTimeout(function(){
+              $("#typed").typed({
+                strings: ["参差荇菜,^300左右流之<br />^1000窈窕淑女,^300寤寐求之<br />"],
+                typeSpeed: 400,
+                backDelay: 500,
+                cursorChar: '',
+                callback: function() {
+                  $('.girl-firend-head').fadeIn('slow');
+                }
+              });
+            },3000);
           }, 200);
   			});
       },
@@ -38,7 +49,7 @@ var X = new Object();
         firstEl = $(preElements.pop());
         firstEl.fadeIn('slow');
         if(preElements.length == 0) clearInterval($recal03_interval);
-      }, 4000);
+      }, 5000);
     },
     afterFullPageScroll: function(anchorLink, index, slideIndex) {
       console.info(index);
