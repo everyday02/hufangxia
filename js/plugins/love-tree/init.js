@@ -1,5 +1,43 @@
+var canvas;
+var seed;
+var hold = 1;
+function startRunLoveTree(e) {
+  var offset = canvas.offset(), x, y;
+  x = e.pageX - offset.left;
+  y = e.pageY - offset.top;
+  if (seed.hover(x, y)) {
+      hold = 0;
+      canvas.unbind("click");
+      canvas.unbind("mousemove");
+      canvas.removeClass('hand');
+  }
+}
+
+
+$('#wrap').click(function(e) {
+  var x = e.pageX;
+  var y = e.pageY;
+  var offset = $(e.target).offset();
+  console.info(offset);
+  console.info(e.pageX);
+  console.info(e.pageY);
+/*
+            554
+init.js:24 286
+init.js:23 694
+init.js:24 393
+*/
+  if((x > 554 && y > 286) && (x < 694 && y < 393)) {
+    console.info('running..');
+    $('#wrap').css({'background': ''});
+    $('#canvas').animate({'opacity': 1}, function() {
+      startRunLoveTree();
+    });
+  }
+});
+
 (function(){
-    var canvas = $('#canvas');
+    canvas = $('#canvas');
 
     if (!canvas[0].getContext) {
         $("#error").show();
@@ -46,20 +84,24 @@
     }
 
     var tree = new Tree(canvas[0], width, height, opts);
-    var seed = tree.seed;
+    seed = tree.seed;
     var foot = tree.footer;
-    var hold = 1;
+
 
     canvas.click(function(e) {
-        var offset = canvas.offset(), x, y;
-        x = e.pageX - offset.left;
-        y = e.pageY - offset.top;
-        if (seed.hover(x, y)) {
-            hold = 0;
-            canvas.unbind("click");
-            canvas.unbind("mousemove");
-            canvas.removeClass('hand');
-        }
+      console.info('clicked');
+      startRunLoveTree(e, seed);
+      /**
+      var offset = canvas.offset(), x, y;
+      x = e.pageX - offset.left;
+      y = e.pageY - offset.top;
+      if (seed.hover(x, y)) {
+          hold = 0;
+          canvas.unbind("click");
+          canvas.unbind("mousemove");
+          canvas.removeClass('hand');
+      }
+      **/
     }).mousemove(function(e){
         var offset = canvas.offset(), x, y;
         x = e.pageX - offset.left;

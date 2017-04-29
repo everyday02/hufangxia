@@ -9,6 +9,7 @@ var X = new Object();
   X = {
     recall2FnFlag: false,
     recall3FnFlag: false,
+    recall4FnFlag: false,
     listeners: {
       onLoaded: function() {
         $window.on('load', function() {
@@ -139,6 +140,25 @@ var X = new Object();
         });
       });
     },
+    recall4Fn: function() {
+      $('.recall-04 .me-say-01').typed({
+        strings: ["有一些^600他对她^300想说的话, 放在了最后"],
+        typeSpeed: 400,
+        backDelay: 500,
+        cursorChar: '',
+        callback: function() {
+          $('.recall-04 .me-say-02').typed({
+            strings: ["设置了一个小关卡, ^300 通过才能够看到哦！"],
+            typeSpeed: 400,
+            backDelay: 500,
+            cursorChar: '',
+            callback: function() {
+              $('.let-me-btn').fadeIn('slow');
+            }
+          });
+        }
+      });
+    },
     afterFullPageScroll: function(anchorLink, index, slideIndex) {
       console.info(index);
       switch (index) {
@@ -153,6 +173,8 @@ var X = new Object();
           X.recall3Fn();
           break;
         case 4:
+          if(X.recall4FnFlag) return;
+          X.recall4Fn();
           break;
         default:
           break;
