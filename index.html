@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Happy Birthday</title>
+    <link rel="shortcut icon" href="./index.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.bootcss.com/fullPage.js/2.9.4/jquery.fullpage.min.css" />
     <link rel="stylesheet" href="./fonts/iconfont.css" />
   </head>
@@ -205,21 +206,55 @@
           	</ul>
           </div>
         </div>
-        <div class="section">
-有点木讷的何航同学一直在考虑女朋友生日到来的问题，从脑洞产生，购买特别的域名，其
-中的波折，到最后网站的实现。他突然发现，也许做了一年的专业前端，就是为了这一天能
-为她制作一个特别的🎁
-        </div>
-        <div class="section">
+        <!--
+          <div class="section">
+            有点木讷的何航同学一直在考虑女朋友生日到来的问题，从脑洞产生，购买特别的域名，其
+            中的波折，到最后网站的实现。他突然发现，也许做了一年的专业前端，就是为了这一天能
+            为她制作一个特别的🎁
+          </div>
+        -->
+        <div class="section recall-04">
             <h3>最后，有一些他对她想说的话，留在了最后。</h3>
             <h4>当然，能否看到，还要通过一个小关卡（(^-^)）</h4>
             <button>点击进入</button>
         </div>
+        <div class="section" style="background: #ffe;">
+          <div id="main">
+               <div id="wrap">
+                  <div id="text">
+                    <div id="code">
+                      <font color="#FF0000">
+                        <span class="say"><h1>我希望有个如你一般的人。</h1></span><br>
+                        <span class="say">我希望有个如你一般的人。</span><br>
+                        <span class="say">如这山间清晨一般明亮清爽，</span><br>
+                        <span class="say">如奔赴古城道路上阳光一般的人，</span><br>
+                        <span class="say">温暖而不炙热，覆盖我所有肌肤。</span><br>
+                        <span class="say">由起点到夜晚，由山野到书房，一切问题的答案都很简单。</span><br>
+                        <span class="say">我希望有个如你一般的人，贯彻未来，数遍生命的公路牌。</span><br>
+                        <span class="say"><span class="space"></span> -- 何航 --</span><br>
+                        <span class="say">最后，献上我的祝福：</span>
+                        <span class="say"><h1 class="happy-birthday">生日快乐</h1></span><br>
+                      </font>
+                    </div>
+                  </div>
+                  <div id="clock-box">
+                    <!-- <span class="STYLE1"></span><font color="#33CC00">距离我喜欢你，</font>
+                    <span class="STYLE1">已经是……</span> -->
+                    <span class="STYLE1"></span>
+                    <font color="#33CC00"></font>
+                    <span class="STYLE1"></span>
+                    <!-- <div id="clock"></div> -->
+                  </div>
+                  <canvas id="canvas" width="1100" height="680"></canvas>
+              </div>
+          </div>
+        </div>
     </div>
-    <audio src="Baby.mp3" autoplay="true" />
+    <!--<audio src="Baby.mp3" autoplay="true" />-->
   </body>
   <link rel="stylesheet" href="./css/1/override-fullPage.css" />
   <link rel="stylesheet" href="./css/photopile.css" />
+  <link rel="stylesheet" href="./css/love-tree.css" />
   <link rel="stylesheet" href="./css/1/main.css" />
   <script src="./js/public/jquery.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="./js/public/jquery.fullPage.min.js" type="text/javascript" charset="utf-8"></script>
@@ -230,8 +265,16 @@
   <script type="text/javascript">
     X.init();
   </script>
-
-
+  <!-- love tree  -->
+  <script src="./js/plugins/love-tree/jscex.min.js" type="text/javascript"></script>
+  <script src="./js/plugins/love-tree/jscex-parser.js" type="text/javascript"></script>
+  <script src="./js/plugins/love-tree/jscex-jit.js" type="text/javascript"></script>
+  <script src="./js/plugins/love-tree/jscex-builderbase.min.js" type="text/javascript"></script>
+  <script src="./js/plugins/love-tree/jscex-async.min.js" type="text/javascript"></script>
+  <script src="./js/plugins/love-tree/jscex-async-powerpack.min.js" type="text/javascript"></script>
+  <script src="./js/plugins/love-tree/functions.js" type="text/javascript"></script>
+  <script src="./js/plugins/love-tree/love.js" type="text/javascript"></script>
+  <script src="./js/plugins/love-tree/init.js" type="text/javascript"></script>
 
   <!-- sakura shader -->
   <script id="sakura_point_vsh" type="x-shader/x_vertex">

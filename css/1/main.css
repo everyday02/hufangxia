@@ -421,3 +421,12 @@ ul.icons.major li {
   .recall-03 ul.photopile li {
     opacity: 0
   }
+
+
+.recall-04 {
+  background: radial-gradient(left center , circle cover , rgb(241, 121, 176) 9% , rgb(223, 42, 125) 86%);
+  background: -o-radial-gradient(left center , circle cover , rgb(241, 121, 176) 9% , rgb(223, 42, 125) 86%);
+  background: -ms-radial-gradient(left center , circle cover , rgb(241, 121, 176) 9% , rgb(223, 42, 125) 86%);
+  background: -moz-radial-gradient(left center , circle cover , rgb(241, 121, 176) 9% , rgb(223, 42, 125) 86%);
+  background: -webkit-radial-gradient(left center , circle cover , #FFC107 9% , #FF9800 86%);
+}
