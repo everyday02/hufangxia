@@ -30,6 +30,7 @@ init.js:24 393
   if((x > 554 && y > 286) && (x < 694 && y < 393)) {
     console.info('running..');
     $('#wrap').css({'background': ''});
+    $('.game-desc').fadeOut();
     $('#canvas').animate({'opacity': 1}, function() {
       startRunLoveTree();
     });
